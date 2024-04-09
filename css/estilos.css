@@ -1,0 +1,126 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    border: 1px solid ;
+    width: 180vh;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+}
+.left-imagen img{
+    width: 46vw;
+    height: 97vh;
+}
+.right-formulario{
+    padding: 15px 25px 20px 25px;
+}
+
+.right-formulario h1{
+    text-decoration: underline wavy 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0A39E6;
+    font-weight: lighter;
+    line-height: normal;
+    margin-top: -10px;
+}
+
+.caja-formulario{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns:auto auto;
+}
+.caja-formulario div{
+    padding: 4px 10px 7px 10px;
+}
+.caja-form-03,
+.caja-form-10,
+.caja-form-11,
+.caja-form-botton{
+    grid-column: 1/3;
+}
+.caja-form-11{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.formControl{
+    width: 95%;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #212529;
+    font-weight: 400;
+    border-radius: 0.375rem;
+    border: 1px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+form label{
+    color: #7F7F7F;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.formControl-select{
+    display: block;
+    width: 100% !important;
+    height: 45px;
+}
+.stars{
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 55px;
+    margin-left: 30px;
+}
+.stars label{
+    cursor: pointer;
+    color: gray;
+    font-size: 2rem;
+}
+.stars input[type="radio"]{
+    display: none;
+}
+.stars>input:checked~label{
+    color: orange;
+
+}
+.caja-form-10 textarea{
+    width: 98%;
+    height: 100px;
+}
+/* == EMPEZANDO A EDITAR LOS BOTONES ==*/
+.caja-form-botton{
+    display: flex;
+    justify-content: center;
+}
+.boton{
+    cursor: pointer;
+    border-radius: .25rem;
+    border: 2px solid transparent;
+    padding: .7rem 2rem;
+    margin: 0 30px;
+    font-size: 1.50rem;
+    font-weight: 400;
+}
+.BtnEnviar{
+    color: #ffff;
+    background-color: #007bff;
+    border-radius: #007bff;
+}
+.BtnRetear{
+    color: #ffff;
+    background-color: #07bf82;
+    border-radius: #07bf82;
+}
+.BtnEnviar:hover{
+    background-color: #0356ad;
+}
+.BtnRetear:hover{
+    background-color: #069162;
+}
